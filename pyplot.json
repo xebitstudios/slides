@@ -1,0 +1,483 @@
+{
+	"about": "smart management system that analyzes data from greenhouses and shadenets, interprets it and presents it in a user friendly dashboard.",
+	"harvestPlan": {
+		"harvestPlanId": "",
+		"status": "in-progress", // completed, created, cancelled
+		"planDescription": "",
+		"crop": "Tomatoes",
+		"staffId": "stff001",
+		"locationId": "",
+		"registration": {
+			"startDate": "07/23/2023",
+			"endDate": "",
+			"operation": "Cultivation", // harvest, seedGermination, CleanUp, landClearing, Weeding, Spraying, Planting, etc
+			"facilityType": "Greenhouse", // Shadenet, Nursery, OpenField, etc.
+			"imgUrl": "",
+			"numOfBlocks": 1,
+			"rowsPerBlock": 16,
+			"columnsPerRows": 48,
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		},
+		"weeklyTargets": {
+			"weekId": "",
+			"weekMonthYear": "",
+			"avgWeeklyHarvest": 86,
+			"harvestUnits": "kg",
+			"harvestKgPerSqm": 42.4,
+			"grpAvgPlusMinusPct": 12,
+			"cycleWeek": [
+				{
+					"cycleWeek": 12,
+					"houseId": "GRNHSE_1",
+					"date": "01/08/2023",
+					"harvestTarget": 80,
+					"harvestUnits": "kg",
+					"planTargetInKgPerSqm": "",
+					"planActualInKgPerSqm": "",
+					"lossPotentialInKgPerSqm": ""
+				}
+			]
+		},
+		"monthlyTargets": {
+			"months": [
+				{
+					"monthYear": "08/2023",
+					"harvestTarget": 400,
+					"harvestUnits": "kg",
+					"planTargetInKgPerSqm": "",
+					"planActualInKgPerSqm": "",
+					"lossPotentialInKgPerSqm": ""
+				}
+			]
+		},
+		"budget": {
+			"work": "",
+			"workDesc": "",
+			"workNotes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			],
+			"startDate": "",
+			"endDate": "",
+			"expectedSpend": "",
+			"totalSpend": "",
+			"expenses": [
+				{
+					"expenseType": "Labour",
+					"spendDate": "",
+					"amount": "",
+					"staffId": "stff001",
+					"reason": "",
+					"receiptNo": "",
+					"receiptImgUrl": "",
+					"notes": [
+						{
+							"noteTitle": "",
+							"description": "",
+							"noteDate": ""
+						}
+					]
+				}
+			]
+		},
+		"sensorReads": [
+			{
+				"sensorType": "temperature", // humidity etc
+				"sensorLocation": "",
+				"sensorId": "",
+				"setpoint": "",
+				"readValue": "",
+				"units": "",
+				"readDate": "",
+				"readTime": "",
+				"staffId": "stff001",
+				"notes": [
+					{
+						"noteTitle": "",
+						"description": "",
+						"noteDate": ""
+					}
+				]
+			}
+		],
+		"dayActivity": {
+			"activityType": "weeding", // irrigation, fertigation, spraying, visual inspection, sensor recording, venting, fogging, etc
+			"activityDate": "",
+			"activityTime": "",
+			"staffId": "stff001",
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		},
+		"monitoring": {
+			"monitorDate": "",
+			"monitorTime": "",
+			"staffId": "stff001",
+			"dayWeather": "sunny", // cloudy, slight rain, heavy rain, etc
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			],
+			"pictures": ["picId002"]
+		},
+		"harvestRecords": [
+			{
+				"monthYear": "07/2023",
+				"staffId": "",
+				"harvestDate": "",
+				"harvestQty": "",
+				"harvestWeightInKg": "",
+				"spoilageQty": "",
+				"spoilageInKg": "",
+				"notes": [
+					{
+						"noteTitle": "",
+						"description": "",
+						"noteDate": ""
+					}
+				],
+				"pictures": ["picId002"]
+			}
+		],
+		"harvestWeekRecords": [
+			{
+				"yearWeek": 22,
+				"resourceType": "Greenhouse", // shadenet. nursery, etc
+				"numOfResources": 4,
+				"totalWeekHarvestInKg": 1246,
+				"totalAreaSqm": 36000
+			}
+		],
+		"dayIncident": {
+			"incidentType": "dead plant", // disease scouting
+			"incidentDate": "",
+			"incidentTime": "",
+			"incidentLevel": "high", // medium, minor, potential
+			"staffId": "stff001",
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	},
+	"cropSales": [
+		{
+			"day": 18,
+			"month": 2,
+			"year": 2023,
+			"timeVal": "16:23:48",
+			"SoldTo": "",
+			"productGroupId": "prd000012",
+			"productGroupImgUrl": "",
+			"productGroupCount": 1,
+			"products": [
+				{
+					"product": "bell-peppers", // tomatoes, cucumber
+					"variety": "",
+					"prodcutCode": "Green",
+					"quantity": 24,
+					"weightInKg": 12.3,
+					"productImgUrl": "",
+					"unitPrice": 500,
+					"totalAmount": 12000.00,
+					"discountPct": 10,
+					"discountAmount": 1200,
+					"finalAmount": 10800.00
+				}
+			],
+			"staffId": "stff001",
+			"reason": "",
+			"receiptNo": "",
+			"receiptImgUrl": "",
+			"totalDiscountAmount": 1200,
+			"totalGroupAmount": 10800.00,
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"staff": [
+		{
+			"staffId": "stff001",
+			"firstName": "Adegoke",
+			"lastName": "Igbin",
+			"imgUrl": "",
+			"hireDate": "3/10/2023",
+			"status": "",
+			"endDate": "",
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"projectType": [
+		{
+			"projectType": "LandPreparation",
+			"projectTypeCode": "LNDPRP",
+		},
+		{
+			"projectType": "Planting",
+			"projectTypeCode": "PLTNG",
+		},
+		{
+			"projectType": "Spraying",
+			"projectTypeCode": "SPRYNG",
+		},
+		,
+		{
+			"projectType": "Weeding",
+			"projectTypeCode": "WEEDNG",
+		}
+	],
+	"locations": [
+		{
+			"locationId": "",
+			"houseType": "Greenhouse",
+			"houseId": "GRNHSE_1",
+			"houseName": "GRNHSE 1",
+			"workStaff": [
+				"stff001"
+			],
+			"dimensions": {
+				"lengthInM": "",
+				"breadthInM": "",
+				"totalAreaSqm": "25,000",
+				"growAreaSqm": ""
+			},
+			"soilMedia": {
+				"mediaType": "",
+				"containerType": ""
+			},
+			"pictures": ["picId001"]
+		}
+	],
+	"pictures": [
+		{
+			"picId": "",
+			"imgUrl": "",
+			"uploadDate": "",
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"labourExpense": [
+		{
+			"day": 18,
+			"month": 2,
+			"year": 2023,
+			"projectTitle": "",
+			"projectType": "LandPreparation",
+			"description": "clearing of G2 land for open-field bell-pepper cultivation",
+			"laborCount": 4,
+			"laborCountCost": 5000.00,
+			"laborDuration": "day",
+			"staffId": "stff001",
+			"activities": [
+				{
+					"activityId": ""
+				}
+			],
+			"reason": "",
+			"receiptNo": "",
+			"receiptImgUrl": "",
+			"amountSpent": 20000.00,
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"expenseObject": [
+		"CropInsurance", 
+		"Fuel", 
+		"Lubricants",
+		"Refund", 
+		"Machinery", 
+		"Construction", 
+		"Improvement", 
+		"Chemicals", "Earth Work", 
+		"Fertilizer", 
+		"Lime", 
+		"Freight", 
+		"Repairs", 
+		"Parts",
+		"Maintenance", 
+		"Seeds", 
+		"Seedlings", 
+		"Storage",
+		"Consulting Service",
+		"Vehicles",
+		"Land",
+		"Building",
+		"Office Items",
+		"Small Equipment",
+		"Tools",
+		"Electricity"
+	],
+	"otherExpense": [
+		{
+			"day": 18,
+			"month": 2,
+			"year": 2023,
+			"expenseTitle": "",
+			"description": "clearing of G2 land for open-field bell-pepper cultivation",
+			"expenseList": [
+				{
+					"expenseItem": "Farm 002 Tomatoes Insurance",
+					"expenseType": "CropInsurance", // Fuel, Refunds, Machinery, Construction, Improvement, Chemicals, Earth Work, Fertilizer, Lime, Freight, Repairs, Maintenance, Seeds, Seedlings, Storage
+					"expenseDuration": "3 months",
+					"expenseCost": 2000.00,
+					"status": "Paid",
+					"notes": [
+						{
+							"noteTitle": "",
+							"description": "",
+							"noteDate": ""
+						}
+					]
+				},
+				{
+					"expenseItem": "Insecticides", // Herbicides, Innoculants, Others
+					"expenseType": "Chemicals",
+					"expenseDuration": "2 Days",
+					"expenseCost": 16000.00,
+					"status": "Pending",
+					"notes": [
+						{
+							"noteTitle": "",
+							"description": "",
+							"noteDate": ""
+						}
+					]
+				},
+				{
+					"expenseItem": "Machine Hiring", // Service Hired
+					"expenseType": "Machinery",
+					"expenseDuration": "5 days",
+					"expenseCost": 80000.00,
+					"status": "Pending",
+					"notes": [
+						{
+							"noteTitle": "",
+							"description": "",
+							"noteDate": ""
+						}
+					]
+				}
+			],
+			"staffId": "stff001",
+			"reason": "",
+			"receiptNo": "",
+			"receiptImgUrl": "",
+			"expenseTotal": 20000.00,
+			"expenseNotes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"activities": [
+		{
+			"activityId": "",
+			"activity": "clearing of land",
+			"projectedCost": 2000.00,
+			"status": "Completed"
+		},
+		{
+			"activityId": "",
+			"activity": "row heap creation",
+			"projectedCost": 3000.00,
+			"status": "Pending"
+		}
+	],
+	"inventory": [
+		{
+			"inventoryCode": "",
+			"inventoryItem": "",
+			"category": "",
+			"description": "",
+			"count": 0,
+			"purchaseDate": "",
+			"unitPrice": 0.00,
+			"totalPrice": 0.00,
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"equipments": [
+		{
+			"equipmentCode": "",
+			"equipmentItem": "",
+			"category": "", // inspection, maintenance, repair
+			"description": "",
+			"count": 0,
+			"purchaseDate": "",
+			"unitPrice": 0.00,
+			"totalPrice": 0.00,
+			"repairs": [
+				{
+					"day": 18,
+					"month": 2,
+					"year": 2023,
+					"cost": 0,
+					"description": "",					
+					"notes": [
+						""
+					]
+				}
+			],
+			"notes": [
+				{
+					"noteTitle": "",
+					"description": "",
+					"noteDate": ""
+				}
+			]
+		}
+	],
+	"plantMeasurements": {},
+	"dashboard": {},
+}
